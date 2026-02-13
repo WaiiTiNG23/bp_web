@@ -4,84 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BP-Dev | Sobre mí</title>
-
+  <link rel="icon" href="../assets/img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="container header-content d-flex justify-content-between align-items-center">
-    <h2 class="logo">BP-Dev</h2>
-    <nav class="nav d-none d-lg-flex">
+  <div class="container d-flex justify-content-between align-items-center header-content">
+    <a href="../index.html" class="logo-box">
+      <img src="../assets/img/logo.svg" alt="Logo BP-Dev" class="logo-img">
+      <span class="logo-text">BP-Dev</span>
+    </a>
+    <nav class="nav d-none d-lg-flex align-items-center">
       <a href="../index.html">Inicio</a>
-      <a href="about.html">Sobre mí</a>
+      <a href="about.html" class="active">Sobre mí</a>
       <a href="services.html">Servicios</a>
       <a href="projects.html">Proyectos</a>
       <a href="contact.html">Contacto</a>
     </nav>
+    <button class="btn btn-outline-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile">☰</button>
   </div>
 </header>
+
+<div class="offcanvas offcanvas-end text-bg-dark" id="menuMobile">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menú</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column gap-2">
+    <a href="../index.html">Inicio</a>
+    <a href="about.html">Sobre mí</a>
+    <a href="services.html">Servicios</a>
+    <a href="projects.html">Proyectos</a>
+    <a href="contact.html">Contacto</a>
+  </div>
+</div>
 
 <main class="section">
   <div class="container">
     <h1 class="section-title">Sobre mí</h1>
+    <p class="section-subtitle">Soy desarrollador web en formación, enfocado en crear experiencias modernas, claras y orientadas a conversión.</p>
 
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6">
-        <div class="box">
-          <p>
-            Soy estudiante de desarrollo web con pasión por el diseño y la programación.
-            Mi objetivo es crear experiencias digitales modernas, funcionales y visualmente atractivas.
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-6">
+        <div class="box p-4 h-100">
+          <h3 class="mb-3">Mi enfoque</h3>
+          <p class="lead-soft">
+            Combino diseño y desarrollo para que cada sitio no solo se vea bien, sino que también sea rápido,
+            responsive y fácil de usar. Priorizo estructura limpia, buena jerarquía visual y performance.
           </p>
-          <p>
-            Me especializo en HTML, CSS, Bootstrap y diseño responsive.
+          <p class="lead-soft mb-0">
+            Actualmente trabajo con HTML, CSS, Bootstrap y JavaScript, construyendo una base sólida como Full Stack Developer.
           </p>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="box">
-          <h3>Habilidades</h3>
+      <div class="col-lg-6">
+        <div class="box p-4 h-100">
+          <h3 class="mb-3">Habilidades</h3>
 
           <div class="skill">
-            <span>HTML</span>
+            <div class="skill-header"><span>HTML</span><span>90%</span></div>
             <div class="skill-bar"><div style="width:90%"></div></div>
           </div>
 
           <div class="skill">
-            <span>CSS</span>
+            <div class="skill-header"><span>CSS / Bootstrap</span><span>85%</span></div>
             <div class="skill-bar"><div style="width:85%"></div></div>
           </div>
 
           <div class="skill">
-            <span>Bootstrap</span>
-            <div class="skill-bar"><div style="width:80%"></div></div>
+            <div class="skill-header"><span>JavaScript</span><span>65%</span></div>
+            <div class="skill-bar"><div style="width:65%"></div></div>
           </div>
 
-          <div class="skill">
-            <span>JavaScript</span>
-            <div class="skill-bar"><div style="width:60%"></div></div>
+          <div class="skill mb-0">
+            <div class="skill-header"><span>UI / Responsive</span><span>80%</span></div>
+            <div class="skill-bar"><div style="width:80%"></div></div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </main>
 
 <footer class="footer">
   <div class="container">
     <div class="socials">
-      <a href="#"><img src="../assets/img/linkedin.svg"></a>
-      <a href="#"><img src="../assets/img/github.svg"></a>
-      <a href="#"><img src="../assets/img/instagram.svg"></a>
-      <a href="#"><img src="../assets/img/telegram.svg"></a>
-      <a href="#"><img src="../assets/img/gmail.svg"></a>
+      <a href="#"><img src="../assets/img/linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="../assets/img/github.svg" alt="GitHub"></a>
+      <a href="#"><img src="../assets/img/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="../assets/img/telegram.svg" alt="Telegram"></a>
+      <a href="#"><img src="../assets/img/gmail.svg" alt="Mail"></a>
     </div>
-    <p>© 2025 BP-Dev</p>
+    <p class="mb-0">© 2026 BP-Dev</p>
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
