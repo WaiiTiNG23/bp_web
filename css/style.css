@@ -46,7 +46,10 @@ a { color: inherit; text-decoration: none; }
   gap: .55rem;
 }
 
-.logo-img { width: 30px; }
+.logo-img {
+  width: 30px;
+  filter: brightness(0) invert(1);
+}
 
 .logo-text {
   font-weight: 800;
