@@ -191,6 +191,19 @@ a { color: inherit; text-decoration: none; }
   color: #dbeafe;
 }
 
+.credentials-box {
+  border: 1px solid #334864;
+  background: rgba(9, 15, 31, 0.75);
+  border-radius: 12px;
+  padding: .75rem .85rem;
+  color: #e8eef8;
+}
+
+.credentials-box p {
+  font-size: .88rem;
+  line-height: 1.35;
+}
+
 .form-control,
 .form-control:focus {
   background: #090f1f;
