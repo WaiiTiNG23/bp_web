@@ -426,6 +426,100 @@ a { color: inherit; text-decoration: none; }
   .index-cards-grid { grid-template-columns: 1fr; }
 }
 
+/* SERVICES wireframe */
+.services-wireframe .section-title,
+.projects-wireframe .section-title,
+.contact-wireframe .section-title {
+  color: #1f2937;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+
+.service-steps { display: grid; gap: .75rem; margin-bottom: 1rem; }
+.service-bubble {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: .6rem;
+  align-items: center;
+}
+.service-bubble > span {
+  width: 30px; height: 30px; border-radius: 999px;
+  background: #d8e4f4; border: 1px solid #bfcde2;
+  color: #334155; font-size: .82rem; display:flex; align-items:center; justify-content:center;
+}
+.service-bubble > div {
+  background: #d8e4f4; border: 1px solid #bfcde2; border-radius: 999px; padding: .7rem 1rem;
+}
+.service-bubble h3 { font-size: .92rem; margin: 0 0 .2rem; color:#1f2937; }
+.service-bubble p { margin:0; font-size:.8rem; color:#475569; }
+
+.service-mini-card {
+  background:#d8e4f4; border:1px solid #bfcde2; border-radius:14px; padding:.9rem; color:#1f2937;
+}
+.service-mini-card i { color:#556f96; font-size:1.2rem; margin-bottom:.35rem; }
+.service-mini-card h4 { font-size:.95rem; }
+.service-mini-card p { font-size:.82rem; color:#475569; }
+
+.service-pillars { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; margin-bottom:1rem; }
+.service-pillars article {
+  background:#d8e4f4; border:1px solid #bfcde2; border-radius:120px 120px 16px 16px;
+  min-height:180px; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; padding:.8rem;
+}
+.service-pillars h5 { color:#1f2937; font-size:.9rem; margin-bottom:.55rem; }
+
+.service-cta-box {
+  background:#d8e4f4; border:1px solid #bfcde2; border-radius:16px; padding:1rem; text-align:center;
+}
+.service-cta-box p { color:#334155; margin-bottom:.6rem; }
+
+/* PROJECTS wireframe */
+.projects-mini-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.9rem; }
+.project-mini-card {
+  background:#d8e4f4; border:1px solid #bfcde2; border-radius:14px; padding:.8rem; color:#1f2937;
+}
+.project-mini-card i { color:#647fa7; margin-bottom:.4rem; }
+.project-mini-card h3 { font-size:.92rem; }
+.project-mini-card p { font-size:.8rem; color:#475569; }
+.project-mini-card.project-empty { display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+
+/* CONTACT wireframe */
+.contact-top-icons { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.65rem; margin-bottom:.85rem; }
+.contact-top-icons article {
+  background:#d8e4f4; border:1px solid #bfcde2; border-radius:12px; min-height:80px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; color:#334155;
+}
+.contact-top-icons i { color:#607da8; margin-bottom:.25rem; }
+.contact-top-icons p { margin:0; font-size:.8rem; }
+
+.contact-grid-main { display:grid; grid-template-columns: 1fr 1.3fr; gap:.8rem; margin-bottom:.9rem; }
+.contact-info-box,
+.contact-form-box,
+.contact-availability-box {
+  background:#d8e4f4; border:1px solid #bfcde2; border-radius:14px; padding:.9rem; color:#1f2937;
+}
+.contact-info-box h3,
+.contact-form-box h3 { font-size:.95rem; margin-bottom:.7rem; }
+.contact-info-box ul { list-style:none; padding:0; margin:0; display:grid; gap:.5rem; }
+.contact-info-box li { display:flex; gap:.5rem; align-items:center; color:#334155; font-size:.85rem; }
+.contact-info-box i { color:#5d7aa3; width:16px; text-align:center; }
+.contact-form-box .form-control { background:#f3f7ff; border-color:#b9cae3; color:#1f2937; }
+
+.contact-availability-box { text-align:center; }
+.contact-availability-box i { font-size:2rem; color:#607da8; margin-bottom:.35rem; }
+.contact-availability-box h4 { font-size:1rem; }
+.contact-availability-box p { font-size:.85rem; color:#475569; margin:0; }
+
+@media (max-width: 992px) {
+  .projects-mini-grid { grid-template-columns:1fr; }
+  .service-pillars { grid-template-columns:1fr; }
+  .contact-top-icons { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .contact-grid-main { grid-template-columns:1fr; }
+}
+
+@media (max-width: 576px) {
+  .contact-top-icons { grid-template-columns:1fr; }
+}
+
 .form-control,
 .form-control:focus {
   background: #090f1f;
