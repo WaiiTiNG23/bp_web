@@ -38,6 +38,28 @@
   font-size: clamp(2rem, 4vw, 3.2rem);
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.hero-highlights {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+
+  div {
+    @include card-base;
+    padding: 14px;
+
+    h3 { margin-bottom: 6px; font-size: 1rem; }
+    p { margin: 0; color: $muted; font-size: .92rem; }
+  }
+}
+
 .hero-card {
   @include card-base;
   padding: 24px;
@@ -104,6 +126,90 @@
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
+}
+
+.services-overview {
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .service-card {
+    @include card-base;
+    padding: 18px;
+    text-align: center;
+
+    i { font-size: 1.5rem; margin-bottom: 10px; }
+    p { color: $muted; margin: 0; }
+  }
+}
+
+.process-section {
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+
+    article {
+      @include card-base;
+      padding: 18px;
+
+      span {
+        display: inline-block;
+        font-weight: 700;
+        color: $primary;
+        margin-bottom: 10px;
+      }
+
+      p { color: $muted; margin: 0; }
+    }
+  }
+}
+
+.invite-section {
+  .invite-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: center;
+  }
+
+  .invite-card {
+    @include card-base;
+    padding: 20px;
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: $muted;
+    }
+  }
+}
+
+.projects-preview {
+  .projects-mini-grid {
+    margin-top: 10px;
+  }
+}
+
+.cta-band {
+  padding: 48px 0;
+  background: rgba(11, 18, 40, .7);
+
+  .cta-band-content {
+    @include flex-between(2rem);
+    flex-wrap: wrap;
+  }
+
+  h2 { margin-bottom: 8px; }
+  p { color: $muted; margin: 0; }
+
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
 }
 
 .about-hero-card,
@@ -229,6 +335,14 @@
 .service-cta-box {
   padding: 20px;
   text-align: center;
+
+  .cta-actions {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
 }
 
 .projects-mini-grid {
@@ -306,12 +420,19 @@
   .service-steps,
   .service-pillars,
   .projects-mini-grid,
-  .contact-grid-main {
+  .contact-grid-main,
+  .services-overview .services-grid,
+  .process-section .process-grid,
+  .invite-section .invite-grid {
     grid-template-columns: 1fr;
   }
 
   .contact-top-icons {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-highlights {
+    grid-template-columns: 1fr;
   }
 }
 
