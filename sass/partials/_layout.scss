@@ -1,4 +1,4 @@
-.header {
+﻿.header {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -19,7 +19,7 @@
 
   .logo-img {
     width: 30px;
-    filter: brightness(0) invert(1);
+    filter: none;
   }
 
   .logo-text {
@@ -66,9 +66,26 @@
     gap: .75rem;
     margin-bottom: 14px;
 
+    a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #2a3e62;
+      background: rgba(15, 23, 42, .9);
+      display: grid;
+      place-items: center;
+      transition: .2s ease;
+
+      &:hover {
+        border-color: #4b6ba3;
+        transform: translateY(-2px);
+      }
+    }
+
     img {
-      width: 26px;
-      filter: brightness(0) invert(1);
+      width: 20px;
+      height: 20px;
+      filter: none;
     }
   }
 }
@@ -78,3 +95,5 @@
     flex-direction: row;
   }
 }
+
+

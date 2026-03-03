@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BP-Dev | Contacto</title>
-  <meta name="description" content="Contacto directo para presupuestos y proyectos web. Respuesta rápida y orientación profesional.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BP-Dev | Contacto, agenda y presupuesto web</title>
+  <meta name="description" content="Agendá una reunión con BP-Dev y completá un formulario de presupuesto detallado para recibir una propuesta web profesional.">
   <link rel="icon" href="../assets/img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,36 +16,80 @@
 
   <main class="section contact-wireframe">
     <div class="container">
-      <h1 class="section-title">Hablemos de tu proyecto</h1>
-      <p class="section-subtitle">Si querés una web profesional para tu marca o negocio, escribime y lo resolvemos.</p>
-
-      <div class="contact-top-icons">
-        <article><i class="fas fa-envelope"></i><p>Email</p></article>
-        <article><i class="fas fa-phone"></i><p>WhatsApp</p></article>
-        <article><i class="fas fa-briefcase"></i><p>Servicio</p></article>
-        <article><i class="fas fa-clock"></i><p>Horario</p></article>
-      </div>
+      <h1 class="section-title">Contacto, agenda y presupuesto</h1>
+      <p class="section-subtitle">Reservá tu reunión directamente desde esta página y completá un brief para recibir una propuesta más precisa.</p>
 
       <div class="contact-grid-main">
-        <section class="contact-info-box">
+        <section class="contact-info-box contact-info-pro">
           <h2>Canales de contacto</h2>
-          <ul>
-            <li><i class="fas fa-envelope"></i><span>brian.pugliese23@gmail.com</span></li>
-            <li><i class="fab fa-whatsapp"></i><span>+54 11 5865-5848</span></li>
-            <li><i class="fas fa-language"></i><span>Español · Inglés básico/intermedio</span></li>
-            <li><i class="fas fa-calendar-alt"></i><span>Lunes a viernes · 10:00 a 17:00 hs</span></li>
-          </ul>
-          <a href="https://calendar.app.google/y6BfG4iH8i7SjcnJ7" target="_blank" rel="noopener" class="btn btn-ghost w-100 mt-2">Agendar reunión</a>
+          <p class="contact-intro">Elegí el canal que te quede más cómodo y te respondo rápido.</p>
+          <div class="contact-channels-grid">
+            <a class="contact-channel" href="mailto:brian.pugliese23@gmail.com">
+              <i class="fas fa-envelope"></i>
+              <div><strong>Email</strong><span>brian.pugliese23@gmail.com</span></div>
+            </a>
+            <a class="contact-channel" href="https://wa.me/541158655848" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>
+              <div><strong>WhatsApp</strong><span>+54 11 5865-5848</span></div>
+            </a>
+            <div class="contact-channel is-static">
+              <i class="fas fa-language"></i>
+              <div><strong>Idiomas</strong><span>Español · Inglés básico/intermedio</span></div>
+            </div>
+            <div class="contact-channel is-static">
+              <i class="fas fa-clock"></i>
+              <div><strong>Horario</strong><span>Lunes a viernes · 10:00 a 17:00 hs</span></div>
+            </div>
+          </div>
+          <p class="small mt-3 mb-2">Tiempo de respuesta estimado: menos de 24 hs hábiles.</p>
+          <a href="https://calendar.app.google/y6BfG4iH8i7SjcnJ7" rel="noopener" class="btn btn-ghost w-100">Abrir agenda completa</a>
         </section>
 
         <section class="contact-form-box">
-          <h2>Formulario de contacto</h2>
-          <form id="contactForm">
-            <input id="contactName" type="text" class="form-control mb-2" placeholder="Nombre" required>
-            <input id="contactEmail" type="email" class="form-control mb-2" placeholder="Email" required>
-            <input type="text" class="form-control mb-2" placeholder="Asunto (opcional)">
-            <textarea id="contactMessage" class="form-control mb-2" rows="5" placeholder="Contame tu proyecto" required></textarea>
-            <div class="d-grid gap-2">
+          <h2>Formulario de presupuesto</h2>
+          <form id="contactForm" aria-label="Formulario de presupuesto BP-Dev">
+            <label for="contactName" class="form-label">Nombre y apellido</label>
+            <input id="contactName" name="name" type="text" class="form-control mb-2" placeholder="Ej: Juan Pérez" autocomplete="name" required>
+
+            <label for="contactEmail" class="form-label">Correo electrónico</label>
+            <input id="contactEmail" name="email" type="email" class="form-control mb-2" placeholder="Ej: tuemail@dominio.com" autocomplete="email" required>
+
+            <label for="contactBusiness" class="form-label">Marca / negocio</label>
+            <input id="contactBusiness" name="business" type="text" class="form-control mb-2" placeholder="Ej: Tienda Urbana">
+
+            <label for="contactService" class="form-label">Servicio principal</label>
+            <select id="contactService" name="service" class="form-select mb-2" required>
+              <option value="" selected disabled>Seleccioná una opción</option>
+              <option>Landing Page</option>
+              <option>Web Corporativa</option>
+              <option>Ecommerce</option>
+              <option>Invitación digital</option>
+              <option>Automatizaciones</option>
+              <option>Otro</option>
+            </select>
+
+            <label for="contactBudget" class="form-label">Presupuesto estimado</label>
+            <select id="contactBudget" name="budget" class="form-select mb-2" required>
+              <option value="" selected disabled>Seleccioná un rango</option>
+              <option>Hasta USD 300</option>
+              <option>USD 300 - 700</option>
+              <option>USD 700 - 1500</option>
+              <option>Más de USD 1500</option>
+              <option>A definir</option>
+            </select>
+
+            <label for="contactTimeline" class="form-label">Plazo ideal de entrega</label>
+            <select id="contactTimeline" name="timeline" class="form-select mb-2" required>
+              <option value="" selected disabled>Seleccioná un plazo</option>
+              <option>Urgente (1-2 semanas)</option>
+              <option>Normal (3-5 semanas)</option>
+              <option>Flexible (+6 semanas)</option>
+            </select>
+
+            <label for="contactMessage" class="form-label">Detalle del proyecto</label>
+            <textarea id="contactMessage" name="message" class="form-control mb-2" rows="4" placeholder="Contame objetivos, público, referencias y cualquier dato clave" required></textarea>
+
+            <div class="d-grid gap-2 mt-3">
               <button class="btn btn-glow" type="submit">Enviar por Email</button>
               <button class="btn btn-ghost" type="button" id="sendWhatsappBtn">Enviar por WhatsApp</button>
             </div>
@@ -53,15 +98,23 @@
       </div>
 
       <section class="contact-availability-box">
-        <i class="fas fa-calendar-check"></i>
-        <h2>Disponibilidad</h2>
-        <p>Disponible para proyectos freelance y oportunidades de empleo full stack.</p>
+        <div class="availability-header">
+          <i class="fas fa-calendar-check"></i>
+          <div>
+            <h2>Disponibilidad en agenda</h2>
+            <p>Acá podés ver turnos disponibles y reservar sin salir de la página. Si no carga el widget, usá el botón de agenda completa.</p>
+          </div>
+        </div>
+        <div class="calendar-embed-wrapper">
+          <iframe src="https://calendar.app.google/y6BfG4iH8i7SjcnJ7" title="Agenda de reuniones BP-Dev" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
     </div>
   </main>
 
-  <footer class="footer"><div class="container"><div class="socials"><a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener"><img src="../assets/img/linkedin.svg" alt="LinkedIn BP-Dev"></a><a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener"><img src="../assets/img/github.svg" alt="GitHub BP-Dev"></a><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="../assets/img/instagram.svg" alt="Instagram BP-Dev"></a><a href="https://wa.me/541158655848" target="_blank" rel="noopener"><img src="../assets/img/telegram.svg" alt="WhatsApp BP-Dev"></a><a href="mailto:brian.pugliese23@gmail.com"><img src="../assets/img/gmail.svg" alt="Correo de contacto"></a></div><p class="mb-0">© 2026 BP-Dev</p><p class="mb-0 small">Desarrollado por <a href="https://waiiting23.github.io/bp_web/" target="_blank" rel="noopener">BPDev</a></p></div></footer>
+  <footer class="footer"><div class="container"><div class="socials"><a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener"><img src="../assets/img/linkedin.svg" alt="Perfil de LinkedIn de BP-Dev"></a><a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener"><img src="../assets/img/github.svg" alt="Repositorio GitHub de BP-Dev"></a><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="../assets/img/instagram.svg" alt="Cuenta de Instagram de BP-Dev"></a><a href="https://wa.me/541158655848" target="_blank" rel="noopener"><img src="../assets/img/telegram.svg" alt="Contacto de WhatsApp de BP-Dev"></a><a href="mailto:brian.pugliese23@gmail.com"><img src="../assets/img/gmail.svg" alt="Correo de contacto BP-Dev"></a></div><p class="mb-0">© 2026 BP-Dev</p><p class="mb-0 small">Desarrollado por <a href="https://waiiting23.github.io/bp_web/" target="_blank" rel="noopener">BPDev</a></p></div></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/contact.js"></script>
 </body>
 </html>
+

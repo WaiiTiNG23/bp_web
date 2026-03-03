@@ -1,4 +1,4 @@
-(() => {
+﻿(() => {
   const form = document.getElementById('contactForm');
   const whatsappBtn = document.getElementById('sendWhatsappBtn');
   if (!form) return;
@@ -6,43 +6,56 @@
   const toEmail = 'brian.pugliese23@gmail.com';
   const whatsappNumber = '541158655848';
 
-  const getPayload = () => {
-    const name = document.getElementById('contactName')?.value?.trim() || '';
-    const email = document.getElementById('contactEmail')?.value?.trim() || '';
-    const message = document.getElementById('contactMessage')?.value?.trim() || '';
-    return { name, email, message };
+  const getValue = (id) => document.getElementById(id)?.value?.trim() || '';
+
+  const getPayload = () => ({
+    name: getValue('contactName'),
+    email: getValue('contactEmail'),
+    business: getValue('contactBusiness'),
+    service: getValue('contactService'),
+    budget: getValue('contactBudget'),
+    timeline: getValue('contactTimeline'),
+    message: getValue('contactMessage')
+  });
+
+  const isValid = ({ name, email, service, budget, timeline, message }) => {
+    return !!(name && email && service && budget && timeline && message);
+  };
+
+  const buildText = (data, lineBreak = '\n') => {
+    return [
+      'Hola Brian, te contacto desde tu web para pedir presupuesto.',
+      '',
+      `Nombre: ${data.name}`,
+      `Email: ${data.email}`,
+      `Marca/negocio: ${data.business || 'No especificado'}`,
+      `Servicio: ${data.service}`,
+      `Presupuesto estimado: ${data.budget}`,
+      `Plazo ideal: ${data.timeline}`,
+      '',
+      'Detalle del proyecto:',
+      data.message
+    ].join(lineBreak);
   };
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const { name, email, message } = getPayload();
-    if (!name || !email || !message) return;
+    const data = getPayload();
+    if (!isValid(data)) return;
 
-    const subject = encodeURIComponent(`Nueva consulta web de ${name}`);
-    const body = encodeURIComponent(
-      `Hola Brian, te contacto desde tu web.%0D%0A%0D%0A` +
-      `Nombre: ${name}%0D%0A` +
-      `Email: ${email}%0D%0A%0D%0A` +
-      `Mensaje:%0D%0A${message}`
-    );
-
+    const subject = encodeURIComponent(`Nueva solicitud de presupuesto - ${data.name}`);
+    const body = encodeURIComponent(buildText(data, '\r\n'));
     window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
   });
 
   whatsappBtn?.addEventListener('click', () => {
-    const { name, email, message } = getPayload();
-    if (!name || !email || !message) {
-      alert('Completá nombre, email y mensaje para enviar por WhatsApp.');
+    const data = getPayload();
+    if (!isValid(data)) {
+      alert('Completá los campos obligatorios para enviar por WhatsApp.');
       return;
     }
 
-    const text = encodeURIComponent(
-      `Hola Brian, te escribo desde tu web.\n\n` +
-      `Nombre: ${name}\n` +
-      `Email: ${email}\n\n` +
-      `Mensaje:\n${message}`
-    );
-
+    const text = encodeURIComponent(buildText(data));
     window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank', 'noopener');
   });
 })();

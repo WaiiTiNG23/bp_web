@@ -9,3 +9,210 @@
     flex-wrap: wrap;
   }
 }
+.availability-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+
+  i {
+    font-size: 1.6rem;
+    color: $accent;
+  }
+
+  p {
+    margin: 0;
+    color: $muted;
+  }
+}
+
+.calendar-embed-wrapper {
+  border: 1px solid #2a3e62;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 560px;
+
+  iframe {
+    width: 100%;
+    min-height: 560px;
+    border: 0;
+    background: #fff;
+  }
+}
+.about-intro-pro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.about-main-card {
+  @include card-base;
+  padding: 22px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.about-badges {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  span {
+    border: 1px solid #2a3e62;
+    border-radius: 999px;
+    padding: .3rem .65rem;
+    font-size: .82rem;
+    color: #cbd5e1;
+  }
+}
+
+.about-metrics {
+  display: grid;
+  gap: 12px;
+
+  article {
+    @include card-base;
+    padding: 16px;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      color: $accent;
+      font-weight: 800;
+    }
+
+    p { margin: 6px 0 0; color: $muted; }
+  }
+}
+
+.about-method {
+  margin: 26px 0;
+}
+
+.about-method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+
+  article {
+    @include card-base;
+    padding: 16px;
+
+    span {
+      color: $primary;
+      font-weight: 800;
+      font-size: .85rem;
+    }
+
+    h3 { margin: 8px 0; }
+    p { color: $muted; margin: 0; }
+  }
+}
+
+.services-pro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.service-pro-card {
+  @include card-base;
+  padding: 20px;
+
+  i {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: $accent;
+  }
+
+  h2 { font-size: 1.2rem; }
+
+  ul {
+    margin: 12px 0;
+    padding-left: 18px;
+    color: $muted;
+  }
+}
+
+.service-delivery-steps {
+  margin-bottom: 22px;
+}
+
+@media (max-width: $break-md) {
+  .about-intro-pro,
+  .about-method-grid,
+  .services-pro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-main-card {
+    flex-direction: column;
+  }
+}
+.project-cover {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #2a3e62;
+}
+.about-avatar {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.contact-info-pro {
+  .contact-intro {
+    color: $muted;
+    margin-bottom: 12px;
+  }
+}
+
+.contact-channels-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-channel {
+  @include card-base;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: .2s ease;
+
+  i {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(56, 189, 248, .2);
+    color: $accent;
+  }
+
+  strong { display: block; font-size: .95rem; }
+  span { color: $muted; font-size: .88rem; }
+
+  &:not(.is-static):hover {
+    transform: translateY(-2px);
+    border-color: #3b4f76;
+  }
+}
+
+.project-links {
+  .btn {
+    min-width: 120px;
+    text-align: center;
+  }
+}
