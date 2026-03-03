@@ -3,41 +3,42 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BP-Dev | Proyectos</title>
+  <meta name="description" content="Proyectos y casos reales desarrollados por BP-Dev. Experiencia en plataformas web, dashboards y sitios corporativos.">
   <link rel="icon" href="../assets/img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<header class="header"><div class="container d-flex justify-content-between align-items-center header-content"><a href="../index.html" class="logo-box"><img src="../assets/img/logo.svg" alt="Logo BP-Dev" class="logo-img"><span class="logo-text">BP-Dev</span></a><nav class="nav d-none d-lg-flex align-items-center"><a href="../index.html">Inicio</a><a href="about.html">Sobre mí</a><a href="services.html">Servicios</a><a href="projects.html" class="active">Proyectos</a><a href="contact.html">Contacto</a></nav><button class="btn btn-outline-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile">☰</button></div></header>
-<div class="offcanvas offcanvas-end text-bg-dark" id="menuMobile"><div class="offcanvas-header"><h5 class="offcanvas-title">Menú</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button></div><div class="offcanvas-body d-flex flex-column gap-2"><a href="../index.html">Inicio</a><a href="about.html">Sobre mí</a><a href="services.html">Servicios</a><a href="projects.html">Proyectos</a><a href="contact.html">Contacto</a></div></div>
+  <header class="header"><div class="container d-flex justify-content-between align-items-center header-content"><a href="../index.html" class="logo-box" aria-label="Ir al inicio"><img src="../assets/img/logo.svg" alt="Logo BP-Dev" class="logo-img"><span class="logo-text">BP-Dev</span></a><nav class="nav d-none d-lg-flex align-items-center" aria-label="Navegación principal"><a href="../index.html">Inicio</a><a href="about.html">Sobre mí</a><a href="services.html">Servicios</a><a href="projects.html" class="active">Proyectos</a><a href="contact.html">Contacto</a></nav><button class="btn btn-outline-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-label="Abrir menú">☰</button></div></header>
+  <div class="offcanvas offcanvas-end text-bg-dark" id="menuMobile"><div class="offcanvas-header"><h5 class="offcanvas-title">Menú</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div><div class="offcanvas-body d-flex flex-column gap-2"><a href="../index.html">Inicio</a><a href="about.html">Sobre mí</a><a href="services.html">Servicios</a><a href="projects.html">Proyectos</a><a href="contact.html">Contacto</a></div></div>
 
-<main class="section projects-wireframe">
-  <div class="container">
-    <h1 class="section-title">Mis proyectos</h1>
-    <p class="section-subtitle">Casos reales y foco en implementación profesional.</p>
-    <div class="projects-mini-grid">
-      <article class="project-mini-card">
-        <i class="fas fa-briefcase"></i>
-        <h3>Web B2B Lacoste</h3>
-        <p>Plataforma comercial con catálogo segmentado, roles y dashboard.</p>
-        <p class="small project-stack mb-2"><strong>Stack:</strong> HTML, CSS, JavaScript, Firebase (Auth, Firestore, Hosting)</p>
-        <div class="credentials-box mb-2">
-          <p class="mb-1"><strong>Credenciales demo</strong></p>
-          <p class="mb-1">demo.cliente@lacoste.com</p>
-          <p class="mb-1">demo.vendedor@lacoste.com</p>
-          <p class="mb-1">demo.admin@lacoste.com</p>
-          <p class="mb-0"><strong>Pass:</strong> demo123</p>
-        </div>
-        <div class="project-links"><a href="#">Repositorio privado</a><a href="https://plataformab2b-bpdev.web.app/" target="_blank" rel="noopener">Ver demo</a></div>
-      </article>
-      <article class="project-mini-card project-empty"><i class="fas fa-plus"></i><h3>Próximo proyecto</h3><p>Espacio reservado para nuevo caso profesional.</p></article>
-      <article class="project-mini-card project-empty"><i class="fas fa-plus"></i><h3>Próximo proyecto</h3><p>Espacio reservado para nuevo caso profesional.</p></article>
+  <main class="section projects-wireframe">
+    <div class="container">
+      <h1 class="section-title">Mis proyectos</h1>
+      <p class="section-subtitle">Casos reales, foco en implementación profesional y resultados medibles.</p>
+      <div class="projects-mini-grid">
+        <article class="project-mini-card">
+          <i class="fas fa-briefcase"></i>
+          <h2>Plataforma B2B Demo</h2>
+          <p>Plataforma comercial con catálogo segmentado, roles y dashboard operativo.</p>
+          <p class="small project-stack mb-2"><strong>Stack:</strong> HTML, CSS, JavaScript, Firebase (Auth, Firestore, Hosting)</p>
+          <div class="credentials-box mb-2">
+            <p class="mb-1"><strong>Credenciales demo</strong></p>
+            <p class="mb-1">demo.admin</p>
+            <p class="mb-1">demo.user</p>
+            <p class="mb-1">demo.vendedor</p>
+            <p class="mb-0"><strong>Pass:</strong> demo123</p>
+          </div>
+          <div class="project-links"><a href="#">Repositorio privado</a><a href="https://plataformab2b-bpdev.web.app/" target="_blank" rel="noopener">Ver demo</a></div>
+        </article>
+        <article class="project-mini-card project-empty"><i class="fas fa-plus"></i><h2>Próximo proyecto</h2><p>Espacio reservado para nuevo caso profesional.</p></article>
+        <article class="project-mini-card project-empty"><i class="fas fa-plus"></i><h2>Próximo proyecto</h2><p>Espacio reservado para nuevo caso profesional.</p></article>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<footer class="footer"><div class="container"><div class="socials"><a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener"><img src="../assets/img/linkedin.svg" alt="LinkedIn"></a><a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener"><img src="../assets/img/github.svg" alt="GitHub"></a><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="../assets/img/instagram.svg" alt="Instagram"></a><a href="https://wa.me/541158655848" target="_blank" rel="noopener"><img src="../assets/img/telegram.svg" alt="WhatsApp"></a><a href="mailto:brian.pugliese23@gmail.com"><img src="../assets/img/gmail.svg" alt="Mail"></a></div><p class="mb-0">© 2026 BP-Dev</p><p class="mb-0 small">Desarrollado por <a href="https://waiiting23.github.io/bp_web/" target="_blank" rel="noopener">BPDev</a></p></div></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="footer"><div class="container"><div class="socials"><a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener"><img src="../assets/img/linkedin.svg" alt="LinkedIn BP-Dev"></a><a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener"><img src="../assets/img/github.svg" alt="GitHub BP-Dev"></a><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="../assets/img/instagram.svg" alt="Instagram BP-Dev"></a><a href="https://wa.me/541158655848" target="_blank" rel="noopener"><img src="../assets/img/telegram.svg" alt="WhatsApp BP-Dev"></a><a href="mailto:brian.pugliese23@gmail.com"><img src="../assets/img/gmail.svg" alt="Correo de contacto"></a></div><p class="mb-0">© 2026 BP-Dev</p><p class="mb-0 small">Desarrollado por <a href="https://waiiting23.github.io/bp_web/" target="_blank" rel="noopener">BPDev</a></p></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

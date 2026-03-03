@@ -3,99 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BP-Dev | Full Stack Developer</title>
+  <title>BP-Dev | Desarrollo web full stack profesional</title>
+  <meta name="description" content="BP-Dev: desarrollo web full stack para marcas y negocios. Diseño, desarrollo y despliegue de sitios rápidos, escalables y orientados a resultados.">
   <link rel="icon" href="assets/img/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="container d-flex justify-content-between align-items-center header-content">
+      <a href="index.html" class="logo-box" aria-label="Ir al inicio">
+        <img src="assets/img/logo.svg" alt="Logo BP-Dev" class="logo-img">
+        <span class="logo-text">BP-Dev</span>
+      </a>
 
-<header class="header">
-  <div class="container d-flex justify-content-between align-items-center header-content">
-    <a href="index.html" class="logo-box">
-      <img src="assets/img/logo.svg" alt="Logo BP-Dev" class="logo-img">
-      <span class="logo-text">BP-Dev</span>
-    </a>
+      <nav class="nav d-none d-lg-flex align-items-center" aria-label="Navegación principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="pages/about.html">Sobre mí</a>
+        <a href="pages/services.html">Servicios</a>
+        <a href="pages/projects.html">Proyectos</a>
+        <a href="pages/contact.html">Contacto</a>
+      </nav>
 
-    <nav class="nav d-none d-lg-flex align-items-center">
-      <a href="index.html" class="active">Inicio</a>
+      <button class="btn btn-outline-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end text-bg-dark" id="menuMobile">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menú</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column gap-2">
+      <a href="index.html">Inicio</a>
       <a href="pages/about.html">Sobre mí</a>
       <a href="pages/services.html">Servicios</a>
       <a href="pages/projects.html">Proyectos</a>
       <a href="pages/contact.html">Contacto</a>
-    </nav>
-
-    <button class="btn btn-outline-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile">☰</button>
+    </div>
   </div>
-</header>
 
-<div class="offcanvas offcanvas-end text-bg-dark" id="menuMobile">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Menú</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body d-flex flex-column gap-2">
-    <a href="index.html">Inicio</a>
-    <a href="pages/about.html">Sobre mí</a>
-    <a href="pages/services.html">Servicios</a>
-    <a href="pages/projects.html">Proyectos</a>
-    <a href="pages/contact.html">Contacto</a>
-  </div>
-</div>
-
-<main class="section index-wireframe">
-  <div class="container">
-    <h1 class="section-title">TÍTULO DESTACADO PRINCIPAL</h1>
-    <div class="index-divider"></div>
-
-    <section class="index-cards-grid">
-      <a class="index-wf-card" href="pages/about.html">
-        <div class="index-wf-thumb"><i class="fas fa-user"></i></div>
-        <h3>Sobre mí</h3>
-        <p>Conocé mi perfil, enfoque de trabajo y habilidades técnicas.</p>
-      </a>
-
-      <a class="index-wf-card" href="pages/services.html">
-        <div class="index-wf-thumb"><i class="fas fa-briefcase"></i></div>
-        <h3>Servicios</h3>
-        <p>Landing pages, ecommerce y automatizaciones para negocios.</p>
-      </a>
-
-      <a class="index-wf-card" href="pages/projects.html">
-        <div class="index-wf-thumb"><i class="fas fa-folder-open"></i></div>
-        <h3>Proyectos</h3>
-        <p>Mirá casos reales implementados y resultados alcanzados.</p>
-      </a>
-
-      <a class="index-wf-card" href="pages/contact.html">
-        <div class="index-wf-thumb"><i class="fas fa-envelope"></i></div>
-        <h3>Contacto</h3>
-        <p>Contame tu idea y coordinamos la mejor solución para tu web.</p>
-      </a>
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="tag">Full Stack Developer</span>
+          <h1>Webs profesionales listas para vender.</h1>
+          <p class="lead-soft">Diseño, desarrollo e implementación de productos digitales con foco en performance, escalabilidad y resultados reales.</p>
+          <div class="hero-actions">
+            <a href="pages/contact.html" class="btn btn-glow">Iniciar proyecto</a>
+            <a href="pages/projects.html" class="btn btn-ghost">Ver proyectos</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/img/projects.jpg" alt="Vista previa de proyectos BP-Dev" loading="lazy">
+          <div class="hero-card-info">
+            <h3>Proyectos con foco en negocio</h3>
+            <p>Landing pages, ecommerce, dashboards y automatizaciones listas para escalar.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="index-cta-wrap">
-      <a href="pages/contact.html" class="btn btn-glow">Iniciar proyecto</a>
-      <a href="https://wa.me/541158655848?text=Hola%20Brian%2C%20quiero%20consultarte%20por%20un%20proyecto%20web." target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
-    </div>
-  </div>
-</main>
+    <section class="section index-wireframe">
+      <div class="container">
+        <h2 class="section-title">Tu sitio en 4 pasos</h2>
+        <p class="section-subtitle">Flujo claro para transformar ideas en productos digitales listos para salir al mercado.</p>
 
-<footer class="footer">
-  <div class="container">
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener"><img src="assets/img/linkedin.svg" alt="LinkedIn"></a>
-      <a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener"><img src="assets/img/github.svg" alt="GitHub"></a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="assets/img/instagram.svg" alt="Instagram"></a>
-      <a href="https://wa.me/541158655848" target="_blank" rel="noopener"><img src="assets/img/telegram.svg" alt="WhatsApp"></a>
-      <a href="mailto:brian.pugliese23@gmail.com"><img src="assets/img/gmail.svg" alt="Mail"></a>
-    </div>
-    <p class="mb-0">© 2026 BP-Dev</p>
-    <p class="mb-0 small">Desarrollado por <a href="https://waiiting23.github.io/bp_web/" target="_blank" rel="noopener">BPDev</a></p>
-  </div>
-</footer>
+        <section class="index-cards-grid">
+          <a class="index-wf-card" href="pages/about.html">
+            <div class="index-wf-thumb"><i class="fas fa-user"></i></div>
+            <h3>Diagnóstico</h3>
+            <p>Analizo objetivos, audiencia y contexto para definir una estrategia realista.</p>
+          </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+          <a class="index-wf-card" href="pages/services.html">
+            <div class="index-wf-thumb"><i class="fas fa-briefcase"></i></div>
+            <h3>Diseño + Desarrollo</h3>
+            <p>Interfaz profesional, código limpio y estructura escalable.</p>
+          </a>
+
+          <a class="index-wf-card" href="pages/projects.html">
+            <div class="index-wf-thumb"><i class="fas fa-folder-open"></i></div>
+            <h3>Implementación</h3>
+            <p>Deploy, performance y ajustes finales listos para producción.</p>
+          </a>
+
+          <a class="index-wf-card" href="pages/contact.html">
+            <div class="index-wf-thumb"><i class="fas fa-envelope"></i></div>
+            <h3>Seguimiento</h3>
+            <p>Soporte y mejoras continuas para hacer crecer tu producto.</p>
+          </a>
+        </section>
+
+        <div class="index-cta-wrap">
+          <a href="pages/contact.html" class="btn btn-glow">Hablemos</a>
+          <a href="https://wa.me/541158655848?text=Hola%20Brian%2C%20quiero%20consultarte%20por%20un%20proyecto%20web." target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener"><img src="assets/img/linkedin.svg" alt="LinkedIn BP-Dev"></a>
+        <a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener"><img src="assets/img/github.svg" alt="GitHub BP-Dev"></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="assets/img/instagram.svg" alt="Instagram BP-Dev"></a>
+        <a href="https://wa.me/541158655848" target="_blank" rel="noopener"><img src="assets/img/telegram.svg" alt="WhatsApp BP-Dev"></a>
+        <a href="mailto:brian.pugliese23@gmail.com"><img src="assets/img/gmail.svg" alt="Correo de contacto"></a>
+      </div>
+      <p class="mb-0">© 2026 BP-Dev</p>
+      <p class="mb-0 small">Desarrollado por <a href="https://waiiting23.github.io/bp_web/" target="_blank" rel="noopener">BPDev</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

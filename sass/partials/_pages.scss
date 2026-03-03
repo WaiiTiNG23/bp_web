@@ -1,0 +1,11 @@
+.about-deploy-box {
+  @include card-base;
+  padding: 20px;
+  margin-top: 24px;
+
+  .deploy-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
