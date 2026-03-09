@@ -1,15 +1,15 @@
-ï»¿# BP-Dev Web
+# BP-Dev Web
 
-Sitio web profesional de presentaciÃ³n de servicios de desarrollo full stack.
+Sitio web profesional de presentación de servicios de desarrollo full stack.
 
-## ğŸ“Œ Objetivo
+## ?? Objetivo
 Construir una web final, lista para mercado, con enfoque en:
-- conversiÃ³n
+- conversión
 - experiencia de usuario
-- SEO tÃ©cnico bÃ¡sico
+- SEO técnico básico
 - rendimiento y responsive design
 
-## ğŸ§± Estructura del proyecto
+## ?? Estructura del proyecto
 - `index.html`
 - `pages/about.html`
 - `pages/services.html`
@@ -20,36 +20,36 @@ Construir una web final, lista para mercado, con enfoque en:
 - `assets/img/`
 - `js/`
 
-## âœ… Requisitos cubiertos (hasta 3ra preentrega)
-- 5 pÃ¡ginas HTML
+## ? Requisitos cubiertos (hasta 3ra preentrega)
+- 5 páginas HTML
 - SASS con:
   - variables
-  - anidaciÃ³n
+  - anidación
   - uso de `&`
   - mixins
   - partials
-- SEO base por pÃ¡gina:
+- SEO base por página:
   - `title`
   - `meta description`
-  - jerarquÃ­a de encabezados
+  - jerarquía de encabezados
   - `alt` descriptivos
   - favicon
-- DiseÃ±o responsive (mobile first adaptado)
-- ImÃ¡genes optimizadas (peso menor a 1 MB)
+- Diseño responsive (mobile first adaptado)
+- Imágenes optimizadas (peso menor a 1 MB)
 
-## ğŸ¨ PÃ¡ginas principales
-- **Inicio:** propuesta de valor + navegaciÃ³n clara por secciones.
-- **Sobre mÃ­:** perfil profesional, metodologÃ­a y stack.
+## ?? Páginas principales
+- **Inicio:** propuesta de valor + navegación clara por secciones.
+- **Sobre mí:** perfil profesional, metodología y stack.
 - **Servicios:** oferta detallada y flujo de trabajo.
 - **Proyectos:** caso destacado con accesos a repositorio/demo.
-- **Contacto:** formulario de presupuesto + agenda de reuniÃ³n.
+- **Contacto:** formulario de presupuesto + agenda de reunión.
 
-## ğŸš€ Deploy
+## ?? Deploy
 - **GitHub Pages:** https://waiiting23.github.io/bp_web/
 - **Repositorio remoto:** https://github.com/WaiiTiNG23/bp_web
-- **Vercel:** pendiente de publicaciÃ³n final
+- **Vercel:** https://bp-web-pi.vercel.app/
 
-## ğŸ› ï¸ Desarrollo local
+## ??? Desarrollo local
 1. Clonar repositorio
 2. Abrir carpeta del proyecto
 3. Compilar SASS cuando haya cambios:
@@ -58,7 +58,7 @@ Construir una web final, lista para mercado, con enfoque en:
 npx sass sass/main.scss css/style.css --style=expanded --source-map
 ```
 
-## ğŸ‘¨â€ğŸ’» Autor
+## ????? Autor
 **Brian Pugliese**
 - LinkedIn: https://www.linkedin.com/in/bpugliese23
 - GitHub: https://github.com/WaiiTiNG23
