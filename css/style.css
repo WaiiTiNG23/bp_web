@@ -663,7 +663,7 @@ button {
   margin: 34px 0;
 }
 
-.stack-list span {
+.stack-list li {
   padding: 9px 12px;
   border: 1px solid var(--line);
   border-radius: 9px;
