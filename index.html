@@ -1,61 +1,124 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BP-Dev | Desarrollo web full stack profesional</title>
-  <meta name="description" content="BP-Dev crea sitios web profesionales, optimizados para SEO y listos para convertir visitas en clientes.">
+  <title>BP-Dev | Diseño y desarrollo web full stack</title>
+  <meta name="description" content="BP-Dev diseña y desarrolla sitios, ecommerce y plataformas web claras, rápidas y listas para operar.">
+  <meta name="theme-color" content="#07101f">
+  <meta property="og:title" content="BP-Dev | Productos web que hacen avanzar negocios">
+  <meta property="og:description" content="Estrategia, UX/UI, desarrollo full stack y lanzamiento en un proceso claro.">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/img/favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header"><div class="container d-flex justify-content-between align-items-center header-content"><a href="index.html" class="logo-box" aria-label="Ir al inicio"><img src="assets/img/logo.svg" alt="Logo BP-Dev" class="logo-img"><span class="logo-text">BP-Dev</span></a><nav class="nav d-none d-lg-flex align-items-center" aria-label="Navegación principal"><a href="index.html" class="active">Inicio</a><a href="pages/about.html">Sobre mí</a><a href="pages/services.html">Servicios</a><a href="pages/projects.html">Proyectos</a><a href="pages/contact.html">Contacto</a></nav><button class="btn btn-outline-light d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-label="Abrir menú">☰</button></div></header>
-  <div class="offcanvas offcanvas-end text-bg-dark" id="menuMobile"><div class="offcanvas-header"><h5 class="offcanvas-title">Menú</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button></div><div class="offcanvas-body d-flex flex-column gap-2"><a href="index.html">Inicio</a><a href="pages/about.html">Sobre mí</a><a href="pages/services.html">Servicios</a><a href="pages/projects.html">Proyectos</a><a href="pages/contact.html">Contacto</a></div></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo-box" aria-label="BP-Dev, ir al inicio">
+        <img src="assets/img/logo.svg" alt="" class="logo-img" width="40" height="40">
+        <span class="logo-text">BP-Dev</span>
+      </a>
+      <nav class="nav d-none d-lg-flex" aria-label="Navegación principal">
+        <a href="index.html" class="active" aria-current="page">Inicio</a>
+        <a href="pages/about.html">Sobre mí</a>
+        <a href="pages/services.html">Servicios</a>
+        <a href="pages/projects.html">Proyectos</a>
+      </nav>
+      <a class="header-cta d-none d-lg-inline-flex" href="pages/contact.html">Hablemos <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+      <button type="button" class="menu-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-label="Abrir menú"><i class="ph ph-list" aria-hidden="true"></i></button>
+    </div>
+  </header>
 
-  <main>
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="tag">Desarrollo web full stack</span>
-          <h1>Una web profesional que venda desde el día uno.</h1>
-          <p class="lead-soft">Diseño, desarrollo, optimización y lanzamiento con enfoque en negocio. Tu web, lista para mercado.</p>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+    <div class="offcanvas-header"><h2 class="offcanvas-title" id="menuMobileLabel">BP-Dev</h2><button type="button" class="menu-button" data-bs-dismiss="offcanvas" aria-label="Cerrar menú"><i class="ph ph-x"></i></button></div>
+    <nav class="offcanvas-body mobile-nav" aria-label="Navegación móvil"><a href="index.html">Inicio</a><a href="pages/about.html">Sobre mí</a><a href="pages/services.html">Servicios</a><a href="pages/projects.html">Proyectos</a><a href="pages/contact.html">Contacto</a></nav>
+  </div>
+
+  <main id="contenido">
+    <section class="hero section-grid">
+      <div class="container hero-layout">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span>Diseño + desarrollo full stack</span></p>
+          <h1>Productos web que hacen avanzar tu negocio.</h1>
+          <p class="hero-lead">Transformo ideas y procesos en experiencias digitales claras, rápidas y listas para operar.</p>
           <div class="hero-actions">
-            <a href="pages/contact.html" class="btn btn-glow">Quiero cotizar</a>
-            <a href="https://calendar.app.google/y6BfG4iH8i7SjcnJ7" target="_blank" rel="noopener" class="btn btn-ghost">Agendar reunión</a>
+            <a href="pages/contact.html" class="button button-primary">Contame tu proyecto <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+            <a href="pages/projects.html" class="text-link">Ver trabajo real <i class="ph ph-arrow-down-right" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="hero-card">
-          <img src="assets/img/projects.jpg" alt="Muestra visual de proyectos web BP-Dev" loading="lazy">
-          <div class="hero-card-info"><h2>Proceso claro + entregables reales</h2><p>Sin vueltas: planificación, diseño, desarrollo y deploy en etapas concretas.</p></div>
+        <div class="hero-system" data-reveal role="group" aria-label="Proceso de trabajo de BP-Dev">
+          <div class="system-top"><span>BP / WORKFLOW</span><span>01 → 04</span></div>
+          <div class="system-core">
+            <div class="system-orbit"><img src="assets/img/logo.svg" alt="" width="64" height="64"></div>
+            <p>Una sola línea de trabajo desde la idea hasta producción.</p>
+          </div>
+          <ol class="system-steps">
+            <li><span>01</span><strong>Entender</strong><small>Objetivo y alcance</small></li>
+            <li><span>02</span><strong>Diseñar</strong><small>UX, interfaz y flujo</small></li>
+            <li><span>03</span><strong>Construir</strong><small>Código y validación</small></li>
+            <li><span>04</span><strong>Lanzar</strong><small>Deploy y evolución</small></li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="trust-line" aria-label="Capacidades principales">
+      <div class="container trust-items">
+        <span>UX/UI</span><span>Frontend</span><span>Backend</span><span>Automatización</span><span>Deploy</span>
+      </div>
+    </section>
+
+    <section class="section services-home">
       <div class="container">
-        <h2 class="section-title">Navegá el sitio por secciones</h2>
-        <p class="section-subtitle">Cada página está enfocada en una etapa distinta para que el recorrido sea simple y profesional.</p>
-        <div class="index-cards-grid">
-          <article class="index-wf-card"><div class="index-wf-thumb"><i class="fas fa-user"></i></div><h3>Sobre mí</h3><p>Perfil, enfoque y stack técnico de trabajo.</p><a href="pages/about.html" class="btn btn-ghost btn-sm mt-3">Ver página</a></article>
-          <article class="index-wf-card"><div class="index-wf-thumb"><i class="fas fa-laptop-code"></i></div><h3>Servicios</h3><p>Qué hago, cómo lo hago y qué resultados podés esperar.</p><a href="pages/services.html" class="btn btn-ghost btn-sm mt-3">Ver página</a></article>
-          <article class="index-wf-card"><div class="index-wf-thumb"><i class="fas fa-folder-open"></i></div><h3>Proyectos</h3><p>Casos reales, stack aplicado y demos.</p><a href="pages/projects.html" class="btn btn-ghost btn-sm mt-3">Ver página</a></article>
-          <article class="index-wf-card"><div class="index-wf-thumb"><i class="fas fa-calendar-check"></i></div><h3>Contacto y agenda</h3><p>Formulario + calendario con disponibilidad en tiempo real.</p><a href="pages/contact.html" class="btn btn-ghost btn-sm mt-3">Ver página</a></article>
+        <div class="section-heading" data-reveal><p class="kicker">Capacidades</p><h2>Menos proveedores.<br>Más continuidad.</h2><p>Un enfoque integral reduce fricción, decisiones perdidas y retrabajo entre diseño y desarrollo.</p></div>
+        <div class="capability-list">
+          <a href="pages/services.html" class="capability" data-reveal><span class="capability-number">01</span><div><h3>Sitios que convierten</h3><p>Landing pages y webs corporativas con contenido claro, SEO base y una acción principal.</p></div><i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+          <a href="pages/services.html" class="capability" data-reveal><span class="capability-number">02</span><div><h3>Productos que funcionan</h3><p>Ecommerce, plataformas internas y flujos digitales pensados para el uso cotidiano.</p></div><i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+          <a href="pages/services.html" class="capability" data-reveal><span class="capability-number">03</span><div><h3>Sistemas que ahorran tiempo</h3><p>Integraciones y automatizaciones que conectan herramientas y reducen tareas repetitivas.</p></div><i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
 
-    <section class="cta-band">
-      <div class="container cta-band-content">
-        <div><h2>¿Listo para lanzar tu proyecto?</h2><p>Te acompaño de la idea al deploy final.</p></div>
-        <div class="cta-actions"><a href="pages/contact.html" class="btn btn-glow">Pedir presupuesto</a><a href="https://calendar.app.google/y6BfG4iH8i7SjcnJ7" target="_blank" rel="noopener" class="btn btn-ghost">Agendar reunión</a></div>
+    <section class="section featured-work">
+      <div class="container">
+        <div class="project-frame" data-reveal>
+          <div class="project-copy">
+            <p class="kicker">Caso destacado</p>
+            <h2>Plataforma B2B</h2>
+            <p>Una experiencia comercial con catálogo segmentado, autenticación por roles y un dashboard operativo para administrar el negocio.</p>
+            <dl class="project-facts"><div><dt>Trabajo</dt><dd>UX/UI + desarrollo</dd></div><div><dt>Stack</dt><dd>JavaScript + Firebase</dd></div><div><dt>Estado</dt><dd>Demo funcional</dd></div></dl>
+            <div class="project-actions"><a href="https://plataformab2b-bpdev.web.app/" target="_blank" rel="noopener" class="button button-light">Explorar demo <i class="ph ph-arrow-up-right"></i></a><a href="pages/projects.html" class="text-link light">Ver el caso</a></div>
+          </div>
+          <div class="project-visual" aria-hidden="true">
+            <div class="browser-chrome"><span></span><span></span><span></span><small>plataformab2b-bpdev.web.app</small></div>
+            <div class="product-ui"><aside><b>BP</b><i></i><i></i><i></i></aside><div class="product-main"><div class="product-header"></div><div class="product-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="section process-home">
+      <div class="container process-layout">
+        <div class="section-heading" data-reveal><p class="kicker">Cómo trabajo</p><h2>Claridad en cada etapa.</h2><p>Sabés qué estamos resolviendo, qué se entrega y cuál es el próximo paso.</p></div>
+        <ol class="process-list" data-reveal><li><span>01</span><div><h3>Diagnóstico</h3><p>Objetivos, usuarios, alcance y prioridades.</p></div></li><li><span>02</span><div><h3>Dirección</h3><p>Arquitectura, experiencia y sistema visual.</p></div></li><li><span>03</span><div><h3>Implementación</h3><p>Desarrollo, contenido y pruebas reales.</p></div></li><li><span>04</span><div><h3>Lanzamiento</h3><p>Publicación, medición y próximos ajustes.</p></div></li></ol>
+      </div>
+    </section>
+
+    <section class="contact-cta">
+      <div class="container contact-cta-inner" data-reveal><div><p class="kicker">Próximo proyecto</p><h2>Hagamos algo que valga la pena usar.</h2></div><div><p>Contame qué necesitás. Te respondo con preguntas concretas y un próximo paso claro.</p><a href="pages/contact.html" class="button button-primary">Empezar conversación <i class="ph ph-arrow-right"></i></a></div></div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container"><div class="socials"><a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener"><img src="assets/img/linkedin.svg" alt="Perfil de LinkedIn de BP-Dev"></a><a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener"><img src="assets/img/github.svg" alt="Repositorio GitHub de BP-Dev"></a><a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="assets/img/instagram.svg" alt="Cuenta de Instagram de BP-Dev"></a><a href="https://wa.me/541158655848" target="_blank" rel="noopener"><img src="assets/img/telegram.svg" alt="Contacto de WhatsApp de BP-Dev"></a><a href="mailto:brian.pugliese23@gmail.com"><img src="assets/img/gmail.svg" alt="Correo de contacto BP-Dev"></a></div><p class="mb-0">© 2026 BP-Dev</p><p class="mb-0 small">Desarrollado por <a href="https://waiiting23.github.io/bp_web/" target="_blank" rel="noopener">BPDev</a></p></div></footer>
+  <footer class="footer"><div class="container footer-grid"><a href="index.html" class="logo-box"><img src="assets/img/logo.svg" alt="" width="36" height="36"><span class="logo-text">BP-Dev</span></a><p>Diseño y desarrollo web full stack desde Buenos Aires.</p><nav aria-label="Redes sociales"><a href="https://www.linkedin.com/in/bpugliese23" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a><a href="https://github.com/WaiiTiNG23" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a><a href="mailto:brian.pugliese23@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a></nav><small>© <span data-current-year>2026</span> BP-Dev</small></div></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
