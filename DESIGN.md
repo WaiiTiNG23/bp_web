@@ -27,7 +27,7 @@ Persuade. The visitor must understand what BP-Dev solves, see one honest proof o
 
 ## Responsive
 
-- Desktop uses asymmetric 12-column layouts.
+- Desktop uses asymmetric layouts within one continuous landing-page narrative.
 - Tablet collapses feature compositions before typography becomes cramped.
 - Mobile keeps one strong reading column, 44px minimum targets and no horizontal overflow.
 

@@ -24,8 +24,8 @@ La web funciona como portfolio profesional y canal comercial. Los visitantes rev
 
 ## Capabilities and Constraints
 
-- Sitio estático de cinco rutas HTML con SASS, JavaScript y Bootstrap.
-- Mantener las rutas, la navegación principal, el formulario de contacto y los canales actuales.
+- Landing page estática de una sola ruta HTML con SASS y JavaScript sin dependencias.
+- La navegación principal usa anclas internas y el formulario conserva email y WhatsApp como canales de salida.
 - Debe continuar desplegando en GitHub Pages y Vercel.
 - La mejora incluye identidad, logo, iconografía, UX/UI, motion, responsive, accesibilidad, SEO y rendimiento.
 - No se deben inventar clientes, testimonios, métricas ni proyectos.
@@ -40,7 +40,7 @@ La web funciona como portfolio profesional y canal comercial. Los visitantes rev
 ## Evidence on Hand
 
 - Único caso real confirmado: Plataforma-B2B-byBPDev.
-- Demo publicada y repositorio existente enlazados desde `pages/projects.html`.
+- Demo publicada y repositorio existente enlazados desde la sección `#proyecto` de `index.html`.
 - No hay otros proyectos, testimonios o métricas confirmadas; no deben fabricarse.
 - Activos actuales disponibles en `assets/img/`.
 

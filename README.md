@@ -1,65 +1,80 @@
-﻿# BP-Dev Web
+# BP-Dev
 
-Sitio web profesional de presentación de servicios de desarrollo full stack.
+Landing page profesional de Brian Pugliese para presentar servicios de diseño y desarrollo web full stack.
 
-## Objetivo
-Construir una web final, lista para mercado, con enfoque en:
-- conversión
-- experiencia de usuario
-- SEO técnico básico
-- rendimiento y responsive design
+## Sitio
 
-## Estructura del proyecto
-- `index.html`
-- `pages/about.html`
-- `pages/services.html`
-- `pages/projects.html`
-- `pages/contact.html`
-- `css/`
-- `sass/`
-- `assets/img/`
-- `js/`
+- GitHub Pages: https://waiiting23.github.io/bp_web/
+- Vercel: https://bp-web-pi.vercel.app/
 
-## Requisitos cubiertos (hasta 3ra preentrega)
-- 5 páginas HTML
-- SASS con:
-  - variables
-  - anidación
-  - uso de `&`
-  - mixins
-  - partials
-- SEO base por página:
-  - `title`
-  - `meta description`
-  - jerarquía de encabezados
-  - `alt` descriptivos
-  - favicon
-- Diseño responsive (mobile first adaptado)
-- Imágenes optimizadas (peso menor a 1 MB)
+## Experiencia
 
-## Páginas principales
-- **Inicio:** propuesta de valor + navegación clara por secciones.
-- **Sobre mí:** perfil profesional, metodología y stack.
-- **Servicios:** oferta detallada y flujo de trabajo.
-- **Proyectos:** caso destacado con accesos a repositorio/demo.
-- **Contacto:** formulario de presupuesto + agenda de reunión.
+La web reúne todo el recorrido comercial en una sola página:
 
-## Deploy
-- **GitHub Pages:** https://waiiting23.github.io/bp_web/
-- **Repositorio remoto:** https://github.com/WaiiTiNG23/bp_web
-- **Vercel:** https://bp-web-pi.vercel.app/
+- propuesta de valor;
+- servicios;
+- caso real de Plataforma B2B;
+- perfil profesional;
+- proceso de trabajo;
+- formulario y canales de contacto.
+
+No se utilizan testimonios, métricas ni proyectos ficticios.
+
+## Stack
+
+- HTML5 semántico
+- SASS / CSS
+- JavaScript sin dependencias
+- Phosphor Icons
+- Google Fonts: Manrope e IBM Plex Mono
 
 ## Desarrollo local
-1. Clonar repositorio
-2. Abrir carpeta del proyecto
-3. Compilar SASS cuando haya cambios:
+
+No requiere framework ni instalación permanente.
 
 ```bash
 npx sass sass/main.scss css/style.css --style=expanded --source-map
 ```
 
-## Autor
-**Brian Pugliese**
+Después, abrir `index.html` o servir la carpeta con cualquier servidor estático.
+
+## Estructura
+
+```text
+.
+├── index.html
+├── assets/
+│   └── img/
+│       ├── favicon.ico
+│       ├── logo.svg
+│       └── plataforma-b2b.png
+├── css/
+│   ├── style.css
+│   └── style.css.map
+├── js/
+│   └── main.js
+├── sass/
+│   ├── main.scss
+│   └── partials/
+│       └── _redesign.scss
+├── DESIGN.md
+├── PRODUCT.md
+└── README.md
+```
+
+## Calidad
+
+- responsive desde mobile hasta desktop;
+- navegación por teclado y foco visible;
+- contraste WCAG AA;
+- soporte para `prefers-reduced-motion`;
+- metadatos SEO y Open Graph;
+- sin Bootstrap ni librerías JavaScript.
+
+## Contacto
+
+Brian Pugliese
+
 - LinkedIn: https://www.linkedin.com/in/bpugliese23
 - GitHub: https://github.com/WaiiTiNG23
 - Email: brian.pugliese23@gmail.com
